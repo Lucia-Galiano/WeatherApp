@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <links
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="search"
+          autofocus="on"
+          autocomplete="off"
+          id="city-input"
+          placeholder="Insert location"
+        />
+        <button
+          class="searchButton"
+          id="searchButton"
+          type="submit"
+          value="Search"
+        >
+          Search
+        </button>
+        <button id="currentPlace" type="button">Current location</button>
+      </form>
+
+      <h1 id="city">Florida, Uruguay</h1>
+      <li id="date"></li>
+      <div class="emoji" id="emoji">🌫️</div>
+      <h2 id="temperature">6</h2>
+      <span class="units">°C </span>
+
+      <hr />
+      <h6>Weather in the next 5 days</h6>
+      <div class="row next-days">
+        <div class="col-sm" id="nextDay">☀️</div>
+        <div class="col-sm" id="nextDay2">🌤️</div>
+        <div class="col-sm" id="nextDay3">🌥️</div>
+        <div class="col-sm" id="nextDay4">🌦️</div>
+        <div class="col-sm" id="nextDay5">⛈️</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
